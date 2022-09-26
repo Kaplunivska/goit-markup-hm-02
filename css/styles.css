@@ -1,0 +1,89 @@
+:root {
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--accent-color: #2196F3; 
+--primary-bg-color: #ffffff;
+}
+
+body {
+    background-color:azure;
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+}
+
+.list {
+list-style: none;
+}
+
+/* Логотип */
+
+.logo {
+margin: 25px 1240px 25px 215px;
+font-family: Raleway, sans-serif;
+}
+
+.page-header {
+    background-color:#FFFFFF;
+}
+
+/* Навігація сайту */
+
+.nav-link {
+    color: var(--primary-text-color);
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+color: var(--accent-color);
+}
+
+.auth-link {
+    color: var(--secondary-text-color);
+}
+
+.auth-link:hover, 
+.auth-link:focus {
+    color: var(--accent-color);
+}
+ 
+/* Герой */
+
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    padding: 200px 452px 280px 452px;
+}
+
+.hero-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Кнопка */
+.service {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 10px 32px 10px 32px;
+    margin: 360px 724px 210px 724px;
+}
+
+
+/* Підвал сторінки */
+
+.footer{
+    background-color: #2F303A;
+}
+
+.contacts {
+    color: var(--secondary-text-color);
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: #ffffff;
+}
