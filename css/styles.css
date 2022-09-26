@@ -9,6 +9,7 @@ body {
     background-color:azure;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    letter-spacing: 0,03em;
 }
 
 .list {
@@ -20,6 +21,9 @@ list-style: none;
 .logo {
 margin: 25px 1240px 25px 215px;
 font-family: Raleway, sans-serif;
+font-size: 26px;
+line-height: 1.2; 
+color: #2196F3;
 }
 
 .page-header {
@@ -27,6 +31,14 @@ font-family: Raleway, sans-serif;
 }
 
 /* Навігація сайту */
+
+.site-nav,
+.auth-nav {
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.36;
+ letter-spacing: 0.02em;
+}
 
 .nav-link {
     color: var(--primary-text-color);
@@ -51,11 +63,16 @@ color: var(--accent-color);
 .hero {
     background-color: #2F303A;
     color: #FFFFFF;
-    padding: 200px 452px 280px 452px;
+    padding: 200px;
+}
+
+.hero-box {
+    width: 1600px;
+    letter-spacing: 0,06em;
 }
 
 .hero-title {
-    font-style: normal;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     text-align: center;
@@ -70,13 +87,55 @@ color: var(--accent-color);
     color: #ffffff;
     padding: 10px 32px 10px 32px;
     margin: 360px 724px 210px 724px;
+    font-size: 16px;
+    line-height: 30px; 
+    font-family: inherit;
+    cursor: pointer;
 }
 
+/* Особливості */
+.title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.1;
+}
+
+.text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+}
+
+.section-title{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+}
+
+.subtitle{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+}
+
+.profession{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.2;  
+}
 
 /* Підвал сторінки */
 
 .footer{
-    background-color: #2F303A;
+background-color: #2F303A;
+width: 1600px;
+}
+
+.footer-nav{
+font-weight: 400;
+font-size: 14px;
+ line-height: 1.7;
 }
 
 .contacts {
