@@ -16,14 +16,25 @@ body {
 list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Логотип */
 
 .logo {
 margin: 25px 1240px 25px 215px;
+text-decoration: none;
 font-family: Raleway, sans-serif;
+font-style: normal;
 font-size: 26px;
 line-height: 1.2; 
 color: #2196F3;
+}
+
+.logo__decor {
+    font-style: normal;
+    color: var(--primary-text-color) ;
 }
 
 .page-header {
@@ -135,11 +146,12 @@ width: 1600px;
 .footer-nav{
 font-weight: 400;
 font-size: 14px;
- line-height: 1.7;
+line-height: 1.7;
 }
 
 .contacts {
     color: var(--secondary-text-color);
+    font-style: normal;
 }
 
 .contacts:hover,
