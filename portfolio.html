@@ -8,28 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <a href="" class="logo">Web<span class="logo__decor">Studio</span></a>
-
-      <nav>
-          <!-- Навігація -->
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="nav-link">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-          <li><a href="" class="nav-link">Контакти</a></li>
+      <div class="container header-container">
+        <a href="" class="logo">Web<span class="logo__decor">Studio</span></a>
+       <!-- Навігація -->
+        <nav class="header-nav">
+          <ul class="site-nav list">
+            <li class="list-item"><a class="nav-link" href="./index.html" >Студія</a></li>
+            <li class="list-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="list-item"><a class="nav-link" href="#" >Контакти</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="auth-nav list"> 
+            <li><a class="auth-link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="auth-link header-tel" href="tel:+380961111111">+380 96 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="auth-nav list"> 
-          <li><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="auth-link">+380 96 111 11 11</a></li>
-      </ul>
-    </header>
+        </div> 
+      </div>
+      </header>
 
-      <main>
+      <main class="container">
         <h1>Портфоліо</h1>
         <section>
           <ul class="list">
@@ -155,7 +159,7 @@
 
 
       <!-- Адрес -->
-      <footer class="footer">
+      <footer class="footer container">
         <address>
           <a href="" class="logo">Web<span class="logo__decor">Studio</span></a>
       <ul class="list">    
