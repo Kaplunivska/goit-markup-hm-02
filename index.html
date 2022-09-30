@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/> 
 
 </head>
@@ -16,7 +16,7 @@
     <!-- Шапка сайту -->
     <header class="page-header">
       <div class="container header-container">
-        <a href="" class="logo">Web<span class="logo__decor">Studio</span></a>
+        <a href="" class="logo">Web<span class="logo-decor">Studio</span></a>
        <!-- Навігація -->
         <nav class="header-nav">
           <ul class="site-nav list">
@@ -36,18 +36,18 @@
   
       <main>
         <!-- Герой -->
-        <section class="hero container">
-        <div class="hero-box" >
+        <section class="hero">
+        <div class="hero-box">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="service">Замовити послугу</button>
         </div>
         </section>
 
         <!-- Особливості -->
-        <section class="section container">
-          <h2 class="section-title hiden">Особливості</h2>
-  
-          <ul class="list">
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title hiden">Особливості</h2>
+          <ul class="list flex-container">
             <li>
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text">
@@ -72,92 +72,110 @@
               </p>
             </li>
           </ul>
+
+          </div>
+         
         </section>
   
         <!-- Чим ми займаємося -->
-        <section class="section container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+        <section class="section about">
+          <div class="container">
+            <h2 class="section-title">Чим ми займаємося</h2>
   
-          <ul class="list">
-            <li>
+          <ul class="list function">
+            <li class="function-img">
               <img src="images/img.jpg" alt="Програміст працює на ноутбуці" 
               width="370"
               height="294"
               />
             </li>
-            <li>
+            <li class="function-img">
               <img src="images/img2.jpg" alt="Дизайнери розробляють додатки для смартфонів"
               width="370"
               height="294"
               >
             </li>
-            <li>
+            <li class="function-img">
                 <img src="images/img3.jpg" alt="Дизайнер працює над кольором" 
                 width="370"
                 height="294"
                 />
               </li>
           </ul>
-        </section>
-  
-        <!-- Наша команда -->
-        <section class="section container">
-          <h2 class="section-title">Наша команда</h2>
-    
-          <ul class="list">
-            <li>
-              <img src="./images/img_igor.jpg" alt="Студія"
-                width="270"
-                height="260"
-              />
-              <h3 class="subtitle">Ігор Дем'яненко</h3>
-                <p class="profession" lang="en">Product Designer</p>
-            </li>
-            <li>
-                <img src="./images/img_olga.jpg" alt="Студія"
-                width="270"
-                height="260"
-              />
-              <h3 class="subtitle">Ольга Рєпіна</h3>
-              <p class="profession" lang="en">Frontend Developer</p>
-                
-            </li>
-            <li>
-                
-              <img src="./images/img_mykola.jpg" alt="Студія"
-                width="270"
-                height="260"
-                />
-                <h3 class="subtitle">Микола Тарасов</h3>
-                <p class="profession" lang="en">Marketing</p> 
-            </li>
-            <li>
-                
-                <img src="./images/img_myhailo.jpg" alt="Студія"
-                width="270"
-                height="260"
-                />
-                <h3 class="subtitle">Михайло Єрмаков</h3>
-                <p class="profession" lang="en">UI Designer</p>
-            </li>
-    
-          </ul>
-        </section>
-      </main>
+        </div>
+          
+      </section>
 
-    <!-- Адрес -->
-    <footer class="footer container">
-        <address>
-          <a href="" class="logo">Web<span class="logo__decor">Studio</span></a>
-            <ul class="list footer-nav">    
-                
-                <li><a href="" class="contacts">м. Київ, пр-т Лесі Українки, 26</a></li> 
-                <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="contacts">+380 96 111 11 11</a></li>
-                
-            </ul>   
-        </address>
+      <!-- Наша команда -->
+      <section class="section section-staff">
+        <div class="container">
+        <h2 class="section-title">Наша команда</h2>
+  
+        <ul class="list staff">
+          <li class="staff-img">
+            <img src="./images/img_igor.jpg" alt="Студія"
+              width="270"
+              height="260"
+            />
+            <div class="staff-text">
+            <h3 class="subtitle">Ігор Дем'яненко</h3>
+              <p class="profession" lang="en">Product Designer</p>
+            </div>
+          </li>
+          <li class="staff-img">
+              <img src="./images/img_olga.jpg" alt="Студія"
+              width="270"
+              height="260"
+            /> 
+            <div class="staff-text">
+              <h3 class="subtitle">Ольга Рєпіна</h3>
+            <p class="profession" lang="en">Frontend Developer</p>
+            </div>
             
-      </footer>
+          </li>
+          <li class="staff-img">
+            <img src="./images/img_mykola.jpg" alt="Студія"
+              width="270"
+              height="260"
+              />
+              <div class="staff-text"><h3 class="subtitle">Микола Тарасов</h3>
+              <p class="profession" lang="en">Marketing</p>
+            </div>
+               
+          </li>
+          <li class="staff-img"> 
+              <img src="./images/img_myhailo.jpg" alt="Студія"
+              width="270"
+              height="260"
+              />
+              <div class="staff-text"><h3 class="subtitle">Михайло Єрмаков</h3>
+              <p class="profession" lang="en">UI Designer</p>
+            </div>
+              
+          </li>
+  
+        </ul>
+      </div>
+        
+      </section>
+    </main>
+
+  <!-- Адрес -->
+  <section class="footer-list"> 
+    <footer class="footer container">
+      <address>
+        <a href="" class="footer-logo">Web<span class="footer-logo-decor">Studio</span></a>
+          <ul class="list footer-nav">    
+              
+              <li><a href="" class="contacts">м. Київ, пр-т Лесі Українки, 26</a></li> 
+              <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111" class="contacts">+380 96 111 11 11</a></li>
+              
+          </ul>   
+      </address>
+          
+    </footer>
+  </section>
+  
 </body>
 </html>
